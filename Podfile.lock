@@ -1,0 +1,26 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - SideMenu (6.4.8)
+  - SwiftLint (0.39.2)
+
+DEPENDENCIES:
+  - Charts
+  - SideMenu
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - SideMenu
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  SideMenu: 4a891be552d30bb6fa87ad404d62e485f8450c34
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+
+PODFILE CHECKSUM: 924b39ffcc0ae3f14873ad5ade7a3cfecc4318e3
+
+COCOAPODS: 1.9.1
