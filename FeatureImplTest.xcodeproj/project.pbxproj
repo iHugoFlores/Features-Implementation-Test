@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C7E9F458246B013171ED541C /* Pods_FeatureImplTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6877144F10E8B7222E655B46 /* Pods_FeatureImplTest.framework */; };
 		F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */; };
-		F0B3FE74247439AF00DA0B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE73247439AF00DA0B60 /* SceneDelegate.swift */; };
 		F0B3FE76247439AF00DA0B60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE75247439AF00DA0B60 /* ViewController.swift */; };
 		F0B3FE79247439AF00DA0B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B3FE77247439AF00DA0B60 /* Main.storyboard */; };
 		F0B3FE7B247439B000DA0B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B3FE7A247439B000DA0B60 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		88F44C5502CF809E1D913F6C /* Pods-FeatureImplTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureImplTest.release.xcconfig"; path = "Target Support Files/Pods-FeatureImplTest/Pods-FeatureImplTest.release.xcconfig"; sourceTree = "<group>"; };
 		F0B3FE6E247439AF00DA0B60 /* FeatureImplTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureImplTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0B3FE73247439AF00DA0B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0B3FE75247439AF00DA0B60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0B3FE78247439AF00DA0B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0B3FE7A247439B000DA0B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,15 +78,54 @@
 		F0B3FE70247439AF00DA0B60 /* FeatureImplTest */ = {
 			isa = PBXGroup;
 			children = (
+				F0B3FE8A2474626400DA0B60 /* Resources */,
+				F0B3FE892474624400DA0B60 /* Supporting Files */,
+				F0B3FE882474621400DA0B60 /* Screens */,
 				F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */,
-				F0B3FE73247439AF00DA0B60 /* SceneDelegate.swift */,
-				F0B3FE75247439AF00DA0B60 /* ViewController.swift */,
-				F0B3FE77247439AF00DA0B60 /* Main.storyboard */,
-				F0B3FE7A247439B000DA0B60 /* Assets.xcassets */,
-				F0B3FE7C247439B000DA0B60 /* LaunchScreen.storyboard */,
-				F0B3FE7F247439B000DA0B60 /* Info.plist */,
 			);
 			path = FeatureImplTest;
+			sourceTree = "<group>";
+		};
+		F0B3FE882474621400DA0B60 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3FE8C247462E000DA0B60 /* Launch Screen */,
+				F0B3FE8B2474626F00DA0B60 /* Landing */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F0B3FE892474624400DA0B60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3FE7F247439B000DA0B60 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0B3FE8A2474626400DA0B60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3FE7A247439B000DA0B60 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0B3FE8B2474626F00DA0B60 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3FE75247439AF00DA0B60 /* ViewController.swift */,
+				F0B3FE77247439AF00DA0B60 /* Main.storyboard */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		F0B3FE8C247462E000DA0B60 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3FE7C247439B000DA0B60 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +263,6 @@
 			files = (
 				F0B3FE76247439AF00DA0B60 /* ViewController.swift in Sources */,
 				F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */,
-				F0B3FE74247439AF00DA0B60 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FeatureImplTest/Info.plist;
+				INFOPLIST_FILE = "FeatureImplTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FeatureImplTest/Info.plist;
+				INFOPLIST_FILE = "FeatureImplTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
