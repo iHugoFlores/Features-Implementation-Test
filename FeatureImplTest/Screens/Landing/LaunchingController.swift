@@ -8,11 +8,17 @@
 
 import UIKit
 
-class LaunchingController: UIViewController {
+class LaunchingController: UITabBarController {
+
+    private let tabControllers = [MapScreenController(), ChartTableScreenViewController()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
+        setUpTabs()
     }
 
+    private func setUpTabs() {
+        viewControllers = tabControllers
+    }
 }
