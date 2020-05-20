@@ -10,6 +10,8 @@ import UIKit
 
 class MapScreenController: UIViewController {
 
+    private let mapView = MapScreenView()
+
     init() {
         super.init(nibName: nil, bundle: nil)
         tabBarItem = UITabBarItem(title: "Map", image: UIImage(systemName: "map"), tag: 0)
@@ -21,6 +23,7 @@ class MapScreenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view = mapView
     }
 
 }
