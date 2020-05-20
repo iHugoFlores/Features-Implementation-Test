@@ -6,16 +6,27 @@
 //  Copyright © 2020 Hugo Flores Perez. All rights reserved.
 //
 
+import MapKit
 import UIKit
 
 class MapScreenView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    private let mapView: MKMapView = {
+        let map = MKMapView()
+        map.translatesAutoresizingMaskIntoConstraints = false
+        return map
+    }()
 
+    init() {
+        super.init(frame: .zero)
+        setUpLayout()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    func setUpLayout() {
+        mapView.addToAndFill(parent: self)
+    }
 }
