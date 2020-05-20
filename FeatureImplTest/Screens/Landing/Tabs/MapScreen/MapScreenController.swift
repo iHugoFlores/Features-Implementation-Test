@@ -26,4 +26,7 @@ class MapScreenController: UIViewController {
         view = mapView
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem?.title = "Map"
+    }
 }

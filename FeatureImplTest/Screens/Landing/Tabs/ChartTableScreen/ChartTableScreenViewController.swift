@@ -21,5 +21,10 @@ class ChartTableScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Charts"
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem?.title = "Charts"
     }
 }
