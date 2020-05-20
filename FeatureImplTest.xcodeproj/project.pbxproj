@@ -12,6 +12,10 @@
 		F0B3FE76247439AF00DA0B60 /* LaunchingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE75247439AF00DA0B60 /* LaunchingController.swift */; };
 		F0B3FE7B247439B000DA0B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B3FE7A247439B000DA0B60 /* Assets.xcassets */; };
 		F0B3FE7E247439B000DA0B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B3FE7C247439B000DA0B60 /* LaunchScreen.storyboard */; };
+		F0D0E88424755B3800E0BA60 /* MapScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E88324755B3800E0BA60 /* MapScreenController.swift */; };
+		F0D0E88624755B4500E0BA60 /* MapScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E88524755B4500E0BA60 /* MapScreenView.swift */; };
+		F0D0E88824755C1800E0BA60 /* ChartTableScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E88724755C1800E0BA60 /* ChartTableScreenView.swift */; };
+		F0D0E88A24755C2800E0BA60 /* ChartTableScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E88924755C2800E0BA60 /* ChartTableScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F0B3FE7A247439B000DA0B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B3FE7D247439B000DA0B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0B3FE7F247439B000DA0B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D0E88324755B3800E0BA60 /* MapScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenController.swift; sourceTree = "<group>"; };
+		F0D0E88524755B4500E0BA60 /* MapScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenView.swift; sourceTree = "<group>"; };
+		F0D0E88724755C1800E0BA60 /* ChartTableScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableScreenView.swift; sourceTree = "<group>"; };
+		F0D0E88924755C2800E0BA60 /* ChartTableScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 		F0B3FE70247439AF00DA0B60 /* FeatureImplTest */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0E88B24756CCD00E0BA60 /* Utilities */,
 				F0B3FE8A2474626400DA0B60 /* Resources */,
 				F0B3FE892474624400DA0B60 /* Supporting Files */,
 				F0B3FE882474621400DA0B60 /* Screens */,
@@ -112,6 +121,7 @@
 		F0B3FE8B2474626F00DA0B60 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
+				F0B3FE8D24746A2D00DA0B60 /* Tabs */,
 				F0B3FE75247439AF00DA0B60 /* LaunchingController.swift */,
 			);
 			path = Landing;
@@ -123,6 +133,56 @@
 				F0B3FE7C247439B000DA0B60 /* LaunchScreen.storyboard */,
 			);
 			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		F0B3FE8D24746A2D00DA0B60 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0E8812475598E00E0BA60 /* ChartTableScreen */,
+				F0D0E8802475598200E0BA60 /* MapScreen */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		F0D0E8802475598200E0BA60 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0E88324755B3800E0BA60 /* MapScreenController.swift */,
+				F0D0E88524755B4500E0BA60 /* MapScreenView.swift */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		F0D0E8812475598E00E0BA60 /* ChartTableScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0E88724755C1800E0BA60 /* ChartTableScreenView.swift */,
+				F0D0E88924755C2800E0BA60 /* ChartTableScreenViewController.swift */,
+			);
+			path = ChartTableScreen;
+			sourceTree = "<group>";
+		};
+		F0D0E88B24756CCD00E0BA60 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0E88D24756CDC00E0BA60 /* Protocols */,
+				F0D0E88C24756CD700E0BA60 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F0D0E88C24756CD700E0BA60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F0D0E88D24756CDC00E0BA60 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D0E88A24755C2800E0BA60 /* ChartTableScreenViewController.swift in Sources */,
+				F0D0E88424755B3800E0BA60 /* MapScreenController.swift in Sources */,
 				F0B3FE76247439AF00DA0B60 /* LaunchingController.swift in Sources */,
 				F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */,
+				F0D0E88624755B4500E0BA60 /* MapScreenView.swift in Sources */,
+				F0D0E88824755C1800E0BA60 /* ChartTableScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
