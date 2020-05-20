@@ -17,6 +17,8 @@
 		F0D0E88824755C1800E0BA60 /* ChartTableScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E88724755C1800E0BA60 /* ChartTableScreenView.swift */; };
 		F0D0E88A24755C2800E0BA60 /* ChartTableScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E88924755C2800E0BA60 /* ChartTableScreenViewController.swift */; };
 		F0D0E89224757C4900E0BA60 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E89124757C4900E0BA60 /* UIView+Ext.swift */; };
+		F0D0E8952475872D00E0BA60 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E8942475872D00E0BA60 /* SideMenuViewController.swift */; };
+		F0D0E8972475A38F00E0BA60 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0E8962475A38F00E0BA60 /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F0D0E88724755C1800E0BA60 /* ChartTableScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableScreenView.swift; sourceTree = "<group>"; };
 		F0D0E88924755C2800E0BA60 /* ChartTableScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableScreenViewController.swift; sourceTree = "<group>"; };
 		F0D0E89124757C4900E0BA60 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		F0D0E8942475872D00E0BA60 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		F0D0E8962475A38F00E0BA60 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 		F0D0E8932475860900E0BA60 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0E8942475872D00E0BA60 /* SideMenuViewController.swift */,
+				F0D0E8962475A38F00E0BA60 /* SideMenuView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -328,11 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D0E8952475872D00E0BA60 /* SideMenuViewController.swift in Sources */,
 				F0D0E88A24755C2800E0BA60 /* ChartTableScreenViewController.swift in Sources */,
 				F0D0E88424755B3800E0BA60 /* MapScreenController.swift in Sources */,
 				F0B3FE76247439AF00DA0B60 /* LaunchingController.swift in Sources */,
 				F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */,
 				F0D0E89224757C4900E0BA60 /* UIView+Ext.swift in Sources */,
+				F0D0E8972475A38F00E0BA60 /* SideMenuView.swift in Sources */,
 				F0D0E88624755B4500E0BA60 /* MapScreenView.swift in Sources */,
 				F0D0E88824755C1800E0BA60 /* ChartTableScreenView.swift in Sources */,
 			);
