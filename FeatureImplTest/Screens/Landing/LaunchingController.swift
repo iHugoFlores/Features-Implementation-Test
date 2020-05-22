@@ -10,7 +10,10 @@ import SideMenu
 import UIKit
 
 class LaunchingController: UITabBarController {
-    private let tabContentControllers = [MapScreenController(), ChartTableScreenViewController()]
+    private let tabContentControllers = [
+        MapScreenController(networkManager: NetworkManager()),
+        ChartTableScreenViewController()
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
