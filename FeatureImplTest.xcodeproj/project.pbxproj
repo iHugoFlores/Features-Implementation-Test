@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C7E9F458246B013171ED541C /* Pods_FeatureImplTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6877144F10E8B7222E655B46 /* Pods_FeatureImplTest.framework */; };
 		F08F18B024780FDD005AA11A /* LandingTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18AF24780FDD005AA11A /* LandingTabScreen.swift */; };
+		F08F18B324784726005AA11A /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18B224784726005AA11A /* Region.swift */; };
+		F08F18B72478481E005AA11A /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18B62478481E005AA11A /* NetworkProtocol.swift */; };
+		F08F18B9247848C2005AA11A /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18B8247848C2005AA11A /* NetworkEngine.swift */; };
+		F08F18BB2478491E005AA11A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18BA2478491E005AA11A /* NetworkManager.swift */; };
+		F08F18BD247849B2005AA11A /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18BC247849B2005AA11A /* Place.swift */; };
 		F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */; };
 		F0B3FE76247439AF00DA0B60 /* LaunchingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE75247439AF00DA0B60 /* LaunchingController.swift */; };
 		F0B3FE7B247439B000DA0B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B3FE7A247439B000DA0B60 /* Assets.xcassets */; };
@@ -27,6 +32,11 @@
 		6877144F10E8B7222E655B46 /* Pods_FeatureImplTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureImplTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F44C5502CF809E1D913F6C /* Pods-FeatureImplTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureImplTest.release.xcconfig"; path = "Target Support Files/Pods-FeatureImplTest/Pods-FeatureImplTest.release.xcconfig"; sourceTree = "<group>"; };
 		F08F18AF24780FDD005AA11A /* LandingTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabScreen.swift; sourceTree = "<group>"; };
+		F08F18B224784726005AA11A /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		F08F18B62478481E005AA11A /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		F08F18B8247848C2005AA11A /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		F08F18BA2478491E005AA11A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F08F18BC247849B2005AA11A /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		F0B3FE6E247439AF00DA0B60 /* FeatureImplTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureImplTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0B3FE75247439AF00DA0B60 /* LaunchingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingController.swift; sourceTree = "<group>"; };
@@ -71,6 +81,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F08F18B124784689005AA11A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F08F18B224784726005AA11A /* Region.swift */,
+				F08F18BC247849B2005AA11A /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F08F18B424784738005AA11A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F08F18BA2478491E005AA11A /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F08F18B52478473D005AA11A /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				F08F18B8247848C2005AA11A /* NetworkEngine.swift */,
+			);
+			path = Engines;
+			sourceTree = "<group>";
+		};
 		F0B3FE65247439AF00DA0B60 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +127,7 @@
 		F0B3FE70247439AF00DA0B60 /* FeatureImplTest */ = {
 			isa = PBXGroup;
 			children = (
+				F08F18B124784689005AA11A /* Models */,
 				F0D0E88B24756CCD00E0BA60 /* Utilities */,
 				F0B3FE8A2474626400DA0B60 /* Resources */,
 				F0B3FE892474624400DA0B60 /* Supporting Files */,
@@ -174,6 +210,8 @@
 		F0D0E88B24756CCD00E0BA60 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F08F18B52478473D005AA11A /* Engines */,
+				F08F18B424784738005AA11A /* Managers */,
 				F0D0E88D24756CDC00E0BA60 /* Protocols */,
 				F0D0E88C24756CD700E0BA60 /* Extensions */,
 			);
@@ -192,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				F08F18AF24780FDD005AA11A /* LandingTabScreen.swift */,
+				F08F18B62478481E005AA11A /* NetworkProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -340,10 +379,15 @@
 				F0D0E8952475872D00E0BA60 /* SideMenuViewController.swift in Sources */,
 				F0D0E88A24755C2800E0BA60 /* ChartTableScreenViewController.swift in Sources */,
 				F0D0E88424755B3800E0BA60 /* MapScreenController.swift in Sources */,
+				F08F18B72478481E005AA11A /* NetworkProtocol.swift in Sources */,
 				F0B3FE76247439AF00DA0B60 /* LaunchingController.swift in Sources */,
 				F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */,
 				F0D0E89224757C4900E0BA60 /* UIView+Ext.swift in Sources */,
+				F08F18B9247848C2005AA11A /* NetworkEngine.swift in Sources */,
 				F0D0E8972475A38F00E0BA60 /* SideMenuView.swift in Sources */,
+				F08F18BD247849B2005AA11A /* Place.swift in Sources */,
+				F08F18B324784726005AA11A /* Region.swift in Sources */,
+				F08F18BB2478491E005AA11A /* NetworkManager.swift in Sources */,
 				F0D0E88624755B4500E0BA60 /* MapScreenView.swift in Sources */,
 				F0D0E88824755C1800E0BA60 /* ChartTableScreenView.swift in Sources */,
 				F08F18B024780FDD005AA11A /* LandingTabScreen.swift in Sources */,
