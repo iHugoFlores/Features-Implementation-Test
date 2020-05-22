@@ -10,7 +10,6 @@ import SideMenu
 import UIKit
 
 class LaunchingController: UITabBarController {
-
     private let tabContentControllers = [MapScreenController(), ChartTableScreenViewController()]
 
     override func viewDidLoad() {
@@ -26,6 +25,12 @@ class LaunchingController: UITabBarController {
 
     private func setUpNavBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis"), style: .plain, target: self, action: #selector(onMenuPressed))
+        setUpRightNavButton(controllerIndex: 0)
+    }
+
+    private func setUpRightNavButton(controllerIndex: Int) {
+        guard let tabScreen = tabContentControllers[controllerIndex] as? LandingTabScreen else { return }
+        navigationItem.rightBarButtonItem = tabScreen.getRightNavbarIconButton()
     }
 
     @objc func onMenuPressed() {
@@ -41,5 +46,9 @@ class LaunchingController: UITabBarController {
         menu.settings = settings
         menu.leftSide = true
         present(menu, animated: true, completion: nil)
+    }
+
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        setUpRightNavButton(controllerIndex: item.tag)
     }
 }
