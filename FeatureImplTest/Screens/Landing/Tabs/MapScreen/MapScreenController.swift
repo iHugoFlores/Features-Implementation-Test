@@ -29,4 +29,20 @@ class MapScreenController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Map"
     }
+
+    @objc func getLocations() {
+        print("Getting locations")
+    }
+}
+
+extension MapScreenController: LandingTabScreen {
+    func getRightNavbarIconButton() -> UIBarButtonItem {
+        let button = UIButton()
+        button.setImage(#imageLiteral(resourceName: "downloadPlaces"), for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        let buttonItem = UIBarButtonItem(customView: button)
+        buttonItem.customView?.constraintWidthTo(width: 28, height: 28)
+        button.addTarget(self, action: #selector(getLocations), for: .touchUpInside)
+        return buttonItem
+    }
 }

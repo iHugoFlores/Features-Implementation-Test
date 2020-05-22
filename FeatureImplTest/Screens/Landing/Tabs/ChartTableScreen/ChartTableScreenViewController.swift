@@ -26,5 +26,12 @@ class ChartTableScreenViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Charts"
+        navigationItem.rightBarButtonItem = nil
+    }
+}
+
+extension ChartTableScreenViewController: LandingTabScreen {
+    func getRightNavbarIconButton() -> UIBarButtonItem {
+        return UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: nil, action: nil)
     }
 }
