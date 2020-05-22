@@ -9,12 +9,13 @@
 import UIKit
 
 class MapScreenController: UIViewController {
-
     private let mapView = MapScreenView()
+    private var networkManager: NetworkManager?
 
-    init() {
+    init(networkManager: NetworkManager) {
         super.init(nibName: nil, bundle: nil)
         tabBarItem = UITabBarItem(title: "Map", image: UIImage(systemName: "map"), tag: 0)
+        self.networkManager = networkManager
     }
 
     required init?(coder: NSCoder) {
@@ -31,7 +32,10 @@ class MapScreenController: UIViewController {
     }
 
     @objc func getLocations() {
-        print("Getting locations")
+        guard let networkManager = networkManager else { return }
+        Region.getRegion(networkManager: networkManager) { (result) in
+            print("API result", result)
+        }
     }
 }
 
