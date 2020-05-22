@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C7E9F458246B013171ED541C /* Pods_FeatureImplTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6877144F10E8B7222E655B46 /* Pods_FeatureImplTest.framework */; };
+		F08F18B024780FDD005AA11A /* LandingTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F18AF24780FDD005AA11A /* LandingTabScreen.swift */; };
 		F0B3FE72247439AF00DA0B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */; };
 		F0B3FE76247439AF00DA0B60 /* LaunchingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B3FE75247439AF00DA0B60 /* LaunchingController.swift */; };
 		F0B3FE7B247439B000DA0B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B3FE7A247439B000DA0B60 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		0283A61BB7E0A278BD6B9D44 /* Pods-FeatureImplTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureImplTest.debug.xcconfig"; path = "Target Support Files/Pods-FeatureImplTest/Pods-FeatureImplTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6877144F10E8B7222E655B46 /* Pods_FeatureImplTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureImplTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F44C5502CF809E1D913F6C /* Pods-FeatureImplTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureImplTest.release.xcconfig"; path = "Target Support Files/Pods-FeatureImplTest/Pods-FeatureImplTest.release.xcconfig"; sourceTree = "<group>"; };
+		F08F18AF24780FDD005AA11A /* LandingTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabScreen.swift; sourceTree = "<group>"; };
 		F0B3FE6E247439AF00DA0B60 /* FeatureImplTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureImplTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B3FE71247439AF00DA0B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0B3FE75247439AF00DA0B60 /* LaunchingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		F0D0E88D24756CDC00E0BA60 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F08F18AF24780FDD005AA11A /* LandingTabScreen.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				F0D0E8972475A38F00E0BA60 /* SideMenuView.swift in Sources */,
 				F0D0E88624755B4500E0BA60 /* MapScreenView.swift in Sources */,
 				F0D0E88824755C1800E0BA60 /* ChartTableScreenView.swift in Sources */,
+				F08F18B024780FDD005AA11A /* LandingTabScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
